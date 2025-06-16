@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Réservation - Anza</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="lang.js" defer></script>
+
+</head>
+<body>
+  <nav>
+    <a href="index.html" data-fr="Accueil" data-en="Home">Accueil</a>
+    <a href="surf.html" data-fr="Surf" data-en="Surf">Surf</a>
+    <a href="hebergement.html" data-fr="Hébergement" data-en="Accommodation">Hébergement</a>
+    <a href="velo.html" data-fr="Quads" data-en="Quads">Quads</a>
+    <a href="reservation.html" data-fr="Réservation" data-en="Booking">Réservation</a>
+  </nav>
+  <header>
+    <h1 data-fr="Formulaire de réservation" data-en="Booking Form">Formulaire de réservation</h1>
+  </header>
+  <section>
+    <form>
+      <label data-fr="Nom complet:" data-en="Full name:">Nom complet:</label>
+      <input type="text" name="name" placeholder="Votre nom complet">
+
+      <label data-fr="Nombre de personnes:" data-en="Number of people:">Nombre de personnes:</label>
+      <select name="guests">
+        <option value="1">1 personne - 300 MAD</option>
+        <option value="2">2 personnes - 500 MAD</option>
+        <option value="3">3 personnes - 650 MAD</option>
+      </select>
+
+      <label data-fr="Date d'arrivée:" data-en="Check-in date:">Date d'arrivée:</label>
+      <input type="date" name="checkin">
+
+      <label data-fr="Date de départ:" data-en="Check-out date:">Date de départ:</label>
+      <input type="date" name="checkout">
+
+      <label data-fr="Message ou demande spéciale:" data-en="Message or special request:">Message ou demande spéciale:</label>
+      <textarea name="notes" placeholder="Votre message ici..."></textarea>
+
+      <button type="submit" data-fr="Envoyer la réservation" data-en="Send Booking">Envoyer la réservation</button>
+    </form>
+  </section>
+</body>
+</html>
